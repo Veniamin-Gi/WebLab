@@ -485,14 +485,20 @@ textarea {
       display: flex;
       flex-wrap: wrap;
   }
-  .header__nav{
+  #header__nav{
       
       max-height: 43px;
   }
   .header__item{
       margin-right: 43px;
       font-weight: bold;
+      transition-duration: 1ms;
   }
+  .new_header__item{
+    margin-right: 43px;
+    font-weight: bold;
+    transition-duration: 1ms;
+}
   .header__list__language{
     display: flex;
     flex-wrap: wrap;
@@ -508,10 +514,7 @@ textarea {
   .header__language__item:last-child{
     margin-right: 0;
   }
-  .header__item:last-child{
-      margin-right: 0;
-      margin-left: 120px;
-  }
+ 
   .header__link{
     font-size: 14px;
     line-height: 14px;
@@ -816,3 +819,32 @@ padding-top:20px;
     margin-top:-289px;
     margin-left:237px;
 }
+
+ul {
+    padding-left: 0;
+    }
+    /* remove traditional bullet from front of list items */
+    /* Step 3 below here */
+  
+    li {
+    list-style-type: none;
+    background-color: #eee;
+    border: 1px solid #c3c3c3;
+    padding: 10px 0px 10px 5px;
+    font-size: 20px;
+    }
+    /* Step 5 below here */
+    .done {
+        background-color: green;
+    }
+  
+    .remove{
+        background-color: red;
+    }
+    /* mark task as finished */
+    /* Step 6 below here */
+    li.finished {
+        color: white;
+        background-color: gray;
+        text-decoration: line-through;
+    }

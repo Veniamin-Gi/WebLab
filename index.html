@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/Scroll.js" ></script>
     <link rel="stylesheet" href="css/style.css">
     <title>FMA</title>
 </head>
@@ -16,17 +18,12 @@
                     </a>
                 </div>
 
-            <nav class="header__nav">
+            <nav id="header__nav">
                 <ul class="header__list">    
-                    <li class="header__item">
-                        <a href="#Home" class="header__link">Главная</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#Catalog" class="header__link">Каталог</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#Work" class="header__link">Как мы работаем</a>
-                    </li>
+                    <li class="header__item"><a href="#Home" class="header__link">Главная</a></li>
+                    <li class="header__item"><a href="#Catalog" class="header__link">Каталог</a> </li>
+                    <li class="new_header__item"><a href="Places.html" class="header__link">Места</a></li>
+                    <li class="header__item"><a href="#Work" class="header__link">Как мы работаем</a></li>
                 </ul>
             </nav>
           </div>
@@ -35,7 +32,7 @@
     </header>  
 
     <main class="main">
-        <section class="intro"> <a class="h_links" name="Home"></a>
+        <section class="intro"> <a class="h_links" id = "Home" name="Home"></a>
             <div class="wrapper">
                 <div class="intro__title">
                     <div class="intro__titles">
@@ -52,7 +49,7 @@
                     <img  class="intro__title__img"src="img/svg/intro_img.svg" alt="РЫНКЕ">
                </div>
              </section>
-        <section class="catalog"><a class="h_links" name="Catalog"></a>
+        <section class="catalog"><a class="h_links" id="Catalog" name="Catalog"></a>
             <div class="wrapper">
                 <img class="catalog__img" src="img/svg/Katalog.svg" alt="Katalog">
                 <div class="catalog__content">
@@ -95,7 +92,7 @@
                 </div>
             </div>
          </section>
-        <section class="work"><a class="h_links" name="Work"></a>
+        <section class="work"><a class="h_links" id="Work" name="Work"></a>
             <div class="wrapper">
                 <img src="img/svg/work.svg" alt="work" class="work__title">
                 <h2 class="work__about">
@@ -137,7 +134,24 @@
                 </div>
             </div>
         </section>
- 
+        <button>Start Animation</button>  
+        
+        
+        <hr>
+
+        <input type="button" id= "addButton" value="Add" onclick="addTask()">
+<input type="text" id="input" placeholder="enter task">
+<ul id="tasks">
+<li>
+<input type="button" class="done" onclick="markDone(this.parentNode)"
+value="&#x2713;" />
+<input type="button" class="remove" onclick="remove(this.parentNode)"
+value="&#x2715;" />
+make todo list
+</li>
+</ul>
+
+
     </main>
 </body>
 </html>
