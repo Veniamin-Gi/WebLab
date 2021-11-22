@@ -1,0 +1,45 @@
+
+/* Для основной страницы */
+#wrapper{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.navbar-nav > a{
+    margin-left:80px;
+    margin-right:80px;
+  }
+
+/* Блок MAIN HEAD */
+  .intro__titles{
+    padding-top: 102px;
+    float:left;
+    padding-left: 72px;
+    position: absolute;
+}
+.intro__title__img{
+    float: right;
+    padding-top: 36px;
+}
+.intro__title_h1{
+    padding-top: 59px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 47px;
+    color: #131313;
+}
+.intro__titile_h2{
+    padding-top: 51px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #131313;
+    
+}
+.intro__titile_h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 14px;
+    color: #555555;
+}
