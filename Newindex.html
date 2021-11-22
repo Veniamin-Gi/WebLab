@@ -13,27 +13,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Подключил Bootstrap-->
+
+    <!--Свои Скрипты-->
+    <script src="js/Scroll.js" ></script>
     
 </head>
 <body>
 
     <div id = "wrapper">
-
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                    <a class="nav-link" href="#">Каталог</a>
-                    <a class="nav-link" href="#">Как мы работаем</a>
-                    <a class="nav-link" href="#">Места</a>
+                    <a class="nav-link active" aria-current="page" href="#Home">Главная</a>
+                    <a class="nav-link" href="#Catalog">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                        <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                        </svg>
+                    Каталог</a>
+                    <a class="nav-link" href="#Work">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-body-text" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5Zm0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
+                        </svg>
+                    Как мы работаем</a>
+                    <a class="nav-link" href="Places.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                    Места</a>
                     </div>
                 </div>
             </div>
         </nav>
         <main>
         <div class="container">
-            <div class="row">
+            <div class="row" id = "Home" >
                 <div id = "intro__title">
                     <div class="intro__titles">
                         <h3 class="intro__titile_h3">
@@ -49,7 +63,7 @@
                     <img  class="intro__title__img"src="img/svg/intro_img.svg" alt="РЫНКЕ">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id = "Catalog">
                 <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -92,9 +106,49 @@
                         </a>
                     </div>
             </div>
-    </div>
-    </main>
+            <!--В этом блоке можно изменить колонки описания-->
+            <div class="row" id="Work">
+                <img src="img/svg/work.svg" alt="work" class="work__title">
+                <h2 class="work__about">
+                    У нас есть оборудование и опыт, позволяющие выполнять заказы любой сложности и объемов. Мы организовали собственное производство полного цикла. Заказ у нашей компании можно организовать по следующему алгоритму.
+                </h2>
 
+                <div class="work__blocks">
+                    <div class="work__block">
+                        <div class="work__block__up">
+                            <h2 class="work__num">01</h2>
+                            <h3 class=work__block__title>Консультация с менеджером</h3>
+                        </div>
+                        <p class="work__block__text">После звонка по одному из номеров отдела продаж, наш менеджер сообщит всю необходимую информацию и проконсультирует вас по поводу вашего заказа.</p>
+                    </div>
+                    <div class="work__block">
+                        <div class="work__block__up">
+                            <h2 class="work__num">02</h2>
+                            <h3 class=work__block__title>Уточняем детали</h3>
+                        </div>
+                        <p class="work__block__text">Наш менеджер уточнит всю необходимую информацию для офоромления заказа. </p>
+                    </div>
+                    <div class="work__block">
+                        <div class="work__block__up">
+                            <h2 class="work__num">03</h2>
+                            <h3 class="work__block__title">Оформляем заказ</h3>
+                        </div>    
+                        <p class="work__block__text">Для оформления заказа вам понадобится предоставить контактные данные.</p>
+                    </div>
+                    <div class="work__block">
+                        <div class="work__block__up">
+                            <h2 class="work__num">04</h2>
+                            <h3 class=work__block__title>Реализация проекта</h3>
+                        </div>
+                        <p class="work__block__text">После оформления заказа на ваши контактные данные придет информация о заказе: сроки исполнения, объемы партии и контактные данные для обратной связи.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="work__img" src="img/svg/work_bg.svg" alt="Katalog">  
+                </div> 
+            </div>
+        </div>
+        </main>
     </div>
 
     
