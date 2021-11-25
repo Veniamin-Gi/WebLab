@@ -147,10 +147,6 @@ a:hover {
  * 2. Improve image quality when scaled in IE 7.
  */
 
-img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
-}
 
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
@@ -564,7 +560,7 @@ textarea {
 /* INTRO END*/
 /* CATALOG START*/
 .catalog{
-    max-height: 644px;
+    height: 1200px;
 }
 .catalog__title{
     font-size: 36px;
@@ -672,6 +668,7 @@ display: flex;
 
 .work{
     padding-top:153px;
+    height: 'toggle';
 }
 .work__about{
     font-family: Montserrat;
@@ -819,12 +816,12 @@ padding-top:20px;
     margin-top:-289px;
     margin-left:237px;
 }
-
+/****
 ul {
     padding-left: 0;
     }
     /* remove traditional bullet from front of list items */
-    /* Step 3 below here */
+    /* Step 3 below here *
   
     li {
     list-style-type: none;
@@ -833,7 +830,7 @@ ul {
     padding: 10px 0px 10px 5px;
     font-size: 20px;
     }
-    /* Step 5 below here */
+    /* Step 5 below here *
     .done {
         background-color: green;
     }
@@ -841,10 +838,15 @@ ul {
     .remove{
         background-color: red;
     }
-    /* mark task as finished */
-    /* Step 6 below here */
+    /* mark task as finished *
+    /* Step 6 below here *
     li.finished {
         color: white;
         background-color: gray;
         text-decoration: line-through;
     }
+ */
+
+ body{
+     color:  black;
+ }
