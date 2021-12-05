@@ -1,0 +1,92 @@
+
+/* Для основной страницы */
+#wrapper{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.navbar-nav > a{
+    margin-left:80px;
+    margin-right:80px;
+  }
+
+/* Блок MAIN HEAD */
+  .intro__titles{
+    padding-top: 102px;
+    float:left;
+    padding-left: 72px;
+    position: absolute;
+}
+.intro__title__img{
+    float: right;
+    padding-top: 36px;
+}
+.intro__title_h1{
+    padding-top: 59px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 47px;
+    color: #131313;
+}
+.intro__titile_h2{
+    padding-top: 51px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #131313;
+    
+}
+.intro__titile_h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 14px;
+    color: #555555;
+}
+
+/* блок work */
+
+.work{
+    padding-top:153px;
+    height: 'toggle';
+}
+.work__about{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+padding-top:20px;
+}
+.work__blocks{
+    padding-top:29px;
+    display: grid;
+    grid-template-areas:"a b c d" ;
+}
+.work__block__up{
+    display: grid;
+    grid-template-areas:"a b";
+    grid-template-columns:  50px;
+}
+.work__block__title{
+    font-size: 14px;
+    line-height: 15px;
+    color: #131313;
+    padding-top: 10px;
+}
+.work__num{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #131313;
+}
+.work__block__text{
+    font-size: 12px;
+    line-height: 14px;
+    color: #131313;
+    margin-top: -12px;
+}
+.work__img{
+    padding-top: 39px;
+    max-width: 1120px;
+}
